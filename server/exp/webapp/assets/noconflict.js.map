@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"noconflict.js",
+"lineCount":2,
+"mappings":"A;AAgBAA,MAAA,CAAOA,MAAAC,WAAA,CAAkB,CAAA,CAAlB;",
+"sources":["noconflict.unminified.js"],
+"names":["jQuery","noConflict"]
+}

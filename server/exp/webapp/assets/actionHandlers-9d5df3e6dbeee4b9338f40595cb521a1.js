@@ -1,0 +1,3 @@
+//# sourceMappingURL=actionHandlers.js.map
+function ActionHandlers(){var a=this;a.handlers={};a.registerHandler=function(c,b){a.handlers[c]=b};a.triggerHandler=function(c,b,d){null!=a.handlers[b]&&(d.is("a")&&c.preventDefault(),a.handlers[b](d))};a.registerModalHandler=function(c,b,d){a.registerHandler(c,function(a){jQuery(b).modal(d)})};a.init=function(){jQuery(document.body).on("click",".page_action",function(c){var b=jQuery(this),d=b.data("action");a.triggerHandler(c,d,b)})}}var PageActionHandlers;
+jQuery(function(){PageActionHandlers=new ActionHandlers;PageActionHandlers.init()});

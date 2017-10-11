@@ -1,0 +1,2 @@
+//# sourceMappingURL=list.js.map
+var MiniProfiler=MiniProfiler||{};MiniProfiler.list={init:function(a){var b=MiniProfiler.jQuery,d=function(c){b.ajax({url:a.path+"results-list",data:{"last-id":c},dataType:"json",type:"GET",success:function(a){b("table tbody").append(b("#rowTemplate").tmpl(a));setTimeout(function(){var b=c;0<a.length&&(b=a[a.length-1].Id);d(b)},4E3)}})};MiniProfiler.path=a.path;b.get(a.path+"list.tmpl?v="+a.version,function(a){a&&(b("body").append(a),b("body").append(b("#tableTemplate").tmpl()),d())})}};

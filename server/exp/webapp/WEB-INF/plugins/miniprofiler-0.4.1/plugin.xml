@@ -1,0 +1,28 @@
+<plugin name='miniprofiler' version='0.4.1' grailsVersion='1.3 &gt; *'>
+  <author>Tom Dunstan</author>
+  <authorEmail>grails@tomd.cc</authorEmail>
+  <title>Mini Profiler plugin</title>
+  <description>Shows timing and sql query information in a head-up display in a web page, useful for debugging
+database and other performance problems.
+</description>
+  <documentation>http://grails.org/plugin/miniprofiler</documentation>
+  <type>MiniprofilerGrailsPlugin</type>
+  <resources>
+    <resource>grails.plugin.miniprofiler.MiniProfilerTagLib</resource>
+  </resources>
+  <repositories>
+    <repository name='grailsCentral' url='http://grails.org/plugins' />
+    <repository name='http://repo.grails.org/grails/core' url='http://repo.grails.org/grails/core/' />
+    <repository name='mavenCentral' url='http://repo1.maven.org/maven2/' />
+    <repository name='https://oss.sonatype.org/content/repositories/snapshots' url='https://oss.sonatype.org/content/repositories/snapshots/' />
+  </repositories>
+  <dependencies>
+    <compile>
+      <dependency group='io.jdev.miniprofiler' name='miniprofiler-grails' version='0.4.1' />
+      <dependency group='io.jdev.miniprofiler' name='miniprofiler-core' version='0.4.1' />
+    </compile>
+  </dependencies>
+  <plugins />
+  <runtimePluginRequirements />
+  <behavior />
+</plugin>
